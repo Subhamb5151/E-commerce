@@ -1,0 +1,52 @@
+.footer{
+    .insta{
+        ul{display: flex;
+            
+            width: 100%;
+        li{flex:1; a{position:relative;display:block; img{width: 100%;height: 270px;}
+    .overlay{position: absolute;width: 100%;height: 100%;left: 0;top:0;background-color: rgba(0, 0, 0, 0.432);
+    display: flex;justify-content: center;align-items: center;opacity:0;
+    @include transition;
+    svg{color: $white;}
+    }
+    &:hover{
+        .overlay{opacity: 1;}
+    }
+}}
+@include  media-breakpoint-down(lg){flex-direction: column;
+li{a{ img{height: 150px;object-fit: cover;}}}
+
+} }
+      
+    }
+    .footer-back{background-color: $primary-color;padding-top: 100px;
+    
+    .right-border{border-right: 1px solid rgba(255, 255, 255, 0.082);padding-right: 32px;height: 100%;
+    .links{li{
+        margin-bottom: 16px;
+        a{color: $white;opacity: 0.5;}
+        &:first-child{color: $secondary-color;}
+    }}
+    img{height: 157px; margin: 0 auto;}
+    p{font-size: 16px;text-align: center;color: $white;line-height: 150%;opacity: 0.9;margin-top: 24px;}
+    @include  media-breakpoint-down(lg){border: none;margin-bottom: 32px;}
+    }
+    h4{font-size: 16px;color: $white;margin-bottom: 8px;opacity: 0.9;}
+    .form-group{
+        margin-bottom: 16px;
+        label{padding:8px 16px;color: $white;font-size: 14px;opacity: 0.3;}
+        input{background-color: $white;opacity: 0.1;padding:8px 60px 8px 16px;}
+        button{position: absolute;right: 0;top:50%;transform: translateY(-50%);background-color: transparent;color: $white;font-family: 'Cormorant', serif;font-weight: bold;padding-right: 16px;}
+    }
+    .social{
+        li{display: inline-block;margin-right: 24px;
+        svg{color: $secondary-color;}
+        }
+    }
+    .copyright{border-top: 1px solid rgba(255, 255, 255, 0.041);margin-top: 80px;padding:32px 0;
+    h6{font-size: 14px;color: $secondary-color;margin-top: 16px;}
+    @include  media-breakpoint-down(lg){text-align: center;}
+    }
+    }
+    @include  media-breakpoint-down(lg){padding: 0 !important;}
+}

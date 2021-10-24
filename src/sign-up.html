@@ -1,0 +1,61 @@
+@@include('./components/header/header.html', {"title": "Aaliyah-Candles-Accesories"})
+
+@@include('./components/nav/nav.html')
+@@include('./components/breadcrumb/breadcrumb.html',{
+    "breadcrumbItem" : [
+     {"item":true,"itemname":"Home","href":"index.html"},
+     {"itemActive":true,"itemnameactive":"Sign Up"}
+    ]
+})
+<section id="sign-up" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul>
+          <li>
+            <a href="" class="facebook"><img src="assets/images/facebook.svg" alt="F"></a>
+        </li>
+        <li>
+          <a href="" class="google"><img src="assets/images/google.svg" alt="G"></a>
+        </li>
+        <li>
+          <a href="" class="twitter"><img src="assets/images/twitter.svg" alt="T"></a>
+      </li>
+      <li>
+        <a href="" class="linkdin"><img src="assets/images/linkedin.svg" alt="L"></a>
+    </li>
+      
+      </ul>
+      <div class="divide">
+        <h6>Or</h6>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="registration" placeholder=" ">
+        <label for="registration">Username</label>
+     
+    </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="registration" placeholder=" ">
+          <label for="registration">E-mail address</label>
+       
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="registration" placeholder=" ">
+        <label for="registration">Password</label>
+        
+    </div>
+  
+    <div class="split">
+      <button class="cstm-btn"> Create Account</button>
+      <a href="sign-up.html">SIGN IN</a>
+    </div>
+   
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')

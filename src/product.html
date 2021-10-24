@@ -1,0 +1,197 @@
+@@include('./components/header/header.html', {"title": "Aaliyah-Candles-Accesories"})
+
+@@include('./components/nav/nav.html')
+@@include('./components/breadcrumb/breadcrumb.html',{
+    "breadcrumbItem" : [
+     {"item":true,"itemname":"Home","href":"index.html"},
+     {"itemActive":true,"itemnameactive":"Products"}
+    ]
+})
+<section id="products" class="section">
+<div class="container">
+  <div class="row">
+<div class="col-md-3">
+<div class="filters">
+  <h1>Filters</h1>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <h6> Type</h6><i data-feather="chevron-down"></i>
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+         <div class="radio">
+          <form action="#">
+           <ul>
+             <li> <h6>Wax Candle</h6>  <div><input type="radio" id="test1" name="radio-group" checked>
+              <label for="test1"></label></div></li>
+              <li> <h6>Wax Candle</h6>  <div><input type="radio" id="test2" name="radio-group" >
+                <label for="test2"></label2></div></li>
+                <li> <h6>Wax Candle</h6>  <div><input type="radio" id="test3" name="radio-group" >
+                  <label for="test3"></label3></div></li>
+           </ul>
+           </form>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <h6> Price Range</h6><i data-feather="chevron-down"></i>
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="range-slide">
+          
+        <div id="nonlinear"></div>
+        <div class="separate">
+         <span class="example-val" id="lower-value"></span>
+         <span class="example-val" id="upper-value"></span>
+        </div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h6>Size</h6><i data-feather="chevron-down"></i>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="chips">
+          
+              
+                   <input type="checkbox" id="myCheckbox8"/>
+                   <label for="myCheckbox8"><h6> 100gm</h6></label>
+                   <input type="checkbox" id="myCheckbox9"/>
+                   <label for="myCheckbox9"><h6> 50gm</h6></label>
+                   <input type="checkbox" id="myCheckbox10"/>
+                   <label for="myCheckbox10"><h6>  80gm</h6></label>
+                   <input type="checkbox" id="myCheckbox11"/>
+                   <label for="myCheckbox11"><h6> 15gm</h></label>
+             
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h6>Scent</h6><i data-feather="chevron-down"></i>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="chips">
+          
+              
+                   <input type="checkbox" id="myCheckbox8"/>
+                   <label for="myCheckbox8"><h6> Rosewood</h6></label>
+                   <input type="checkbox" id="myCheckbox9"/>
+                   <label for="myCheckbox9"><h6>   Tobaccowood</h6></label>
+                   <input type="checkbox" id="myCheckbox10"/>
+                   <label for="myCheckbox10"><h6>  Sandalwood Vanilla</h6></label>
+                  
+             
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+</div>
+<div class="col-md-9">
+<div class="products-sort">
+  <h5>Showing <span> 46 of 160 items</span></h5>
+  <div class="sort-drop">
+   <h6>Sort By</h6>
+   <div class="form-group">
+    
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Ascending</option>
+      <option>Descending</option>
+      <option>Newest</option>
+    
+    </select>
+  </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div>  
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div>  
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div>  
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div> 
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div> 
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div> 
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div> 
+<div class="col-md-4">
+  @@include('./components/product-mini/product-mini.html', {"img":
+                    "product.png", "name": "Product name"} )
+</div> 
+</div>
+<nav aria-label="...">
+  <ul class="pagination ">
+    <li class="page-item disabled">
+      <a class="page-link custom" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link custom" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+</div>
+  </div>
+</div>
+
+</section>
+
+
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')

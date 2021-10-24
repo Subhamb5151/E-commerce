@@ -1,0 +1,70 @@
+.service-card{
+  
+  background-color: $white;
+  
+  margin-bottom: 32px;
+border: 2px solid $gray100;
+  
+  
+  .product-view{background-color: $gray100;
+  position: relative;
+  .overlay{position: absolute;width: 100%;height:100%;
+    left:0;top:0;
+    background-color: rgba(0, 0, 0, 0.555);
+    @include transition;
+    opacity: 0;
+    display:flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  }
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 24px;
+    }
+  }
+  .info-mini{
+    padding: 28px ;
+    display: flex;
+    justify-content: space-between;
+  h4{
+    font-size: 24px;
+    max-width: 250px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: $black;
+    font-family: 'Cormorant', serif;font-weight: bold;
+    margin-bottom: 16px;
+  
+  }
+  .price{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+   color: $black;
+    
+    
+    @include media-breakpoint-down(lg){
+      padding-bottom: 24px;
+    }
+  }
+  &:hover{
+    .service-p{
+      border-bottom: 8px solid ;
+    }
+  }}
+  .new{position: absolute;top:16px;right: 16px;width: 36px;height: 36px;border-radius: 50%;background-color: $primary-color;color: $white;font-size: 13px;display: flex;justify-content: center;align-items: center;z-index: 8;}
+  &:hover{
+    .overlay{
+      opacity: 1;
+    }
+  }
+}

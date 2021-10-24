@@ -1,0 +1,187 @@
+<header id="header">
+  <div class="top">
+    <div class="container">
+      <div class="top-section d-flex">
+      <div class="search-bar mr-auto">
+        <div class="form-group">
+          <input type="text" class="form-control" id="registration" placeholder=" ">
+          <label for="registration">Search by candle type</label>
+         <a href=""><i data-feather="search"></i></a> 
+      </div>
+      </div>
+    
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" alt="">
+        </a>
+       
+        
+        <ul class="right-icons ml-auto">
+          <li>
+            <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal"><h5>SignIn/SignUp</h5></a>
+          </li>
+          <li >
+            <a class="head-icon">
+              <i data-feather="heart"></i></a>
+           
+          </li>
+           <li>
+            
+            <a class="head-icon" href="#" id="open-menu"><i data-feather="shopping-bag"></i> <span>0</span></a></li>
+        </ul>
+     
+    </div>
+  </div>
+    </div>
+    <div class="bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="right-icons ml-auto">
+              <li>
+                <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal"><h5>SignIn/SignUp</h5></a>
+              </li>
+             
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="search-bar w-100">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="registration" placeholder=" ">
+                  <label for="registration">Search by candle type</label>
+                 <a href=""><i data-feather="search"></i></a> 
+              </div>
+              </div>
+              <ul class="navbar-nav mx-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Products</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="product.html">
+                        Candles
+                       </a
+                      >
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="product.html">
+                        Wax-melts</a
+                      >
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="products.html">
+                        Accesories</a
+                      >
+                    </li>
+                    
+                  </ul>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Gift Sets</a>
+              </li>
+         
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promotions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li>
+              </ul>
+            </div>
+           
+          </nav>
+    </div>
+  </div>
+  <div class="cart">
+  <div id="body-overlay"></div>
+  <div class="real-menu" role="navigation"> 
+             
+    
+    <div class="cart-head">
+      <h5>Cart</h5>
+      <i data-feather="x" id="close-cart"></i>
+    </div>
+    <div class="cart-item">
+      @@include('../cart-item/cart-item.html', {"img":
+      "product.png", "name": "Product name", "price":"$43"} )
+      @@include('../cart-item/cart-item.html', {"img":
+      "product.png", "name": "Product name", "price":"$33"} )
+    </div>
+    <div class="cart-checkout">
+      <ul>
+        <li><h6>Subtotal</h6> <h5>$12.5</h5></li>
+        <li><h6>Shipping</h6> <h5>$2.5</h5></li>
+        <li><h6>Estimated Total</h6> <h5>$14.5</h5></li>
+      </ul>
+      <a class="cstm-btn" href="checkout.html">Checkout</a>
+    </div> 
+       
+    </div></div>
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Log In</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <a href="" class="facebook"><img src="assets/images/facebook.svg" alt="F"></a>
+            </li>
+            <li>
+              <a href="" class="google"><img src="assets/images/google.svg" alt="G"></a>
+            </li>
+            <li>
+              <a href="" class="twitter"><img src="assets/images/twitter.svg" alt="T"></a>
+          </li>
+          <li>
+            <a href="" class="linkdin"><img src="assets/images/linkedin.svg" alt="L"></a>
+        </li>
+          
+          </ul>
+          <div class="divide">
+            <h6>Or</h6>
+          </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="registration" placeholder=" ">
+              <label for="registration">E-mail or Username</label>
+           
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="registration" placeholder=" ">
+            <label for="registration">Password</label>
+            
+        </div>
+        <a href="">Forgot Password?</a>
+        <div class="split">
+          <button class="cstm-btn"> Sign In</button>
+          <a href="sign-up.html">CREATE ACCOUNT</a>
+        </div>
+       
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+</header>

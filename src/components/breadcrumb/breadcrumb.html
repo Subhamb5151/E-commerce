@@ -1,0 +1,11 @@
+<div class="breadcrumb-wrapper">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                @@for(var i = 0; i< breadcrumbItem.length; i++){
+                    @@include('breadcrumbitem.html', `+(JSON.stringify(breadcrumbItem[i]))+`)
+                }
+              </ol>
+        </nav>
+    </div>
+</div>

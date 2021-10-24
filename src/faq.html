@@ -1,0 +1,64 @@
+@@include('./components/header/header.html', {"title": "Aaliyah-Candles-Accesories"})
+
+@@include('./components/nav/nav.html')
+@@include('./components/breadcrumb/breadcrumb.html',{
+    "breadcrumbItem" : [
+     {"item":true,"itemname":"Home","href":"index.html"},
+     {"itemActive":true,"itemnameactive":"FAQs"}
+    ]
+})
+<section id="faq">
+  <div class="container">
+    <div class="accordion" id="faq_accordion">
+        <div class="accordion_wpr">
+            <button class="text-left" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                Where should I start? <i data-feather="chevron-down"></i>
+            </button>
+            <div id="faq1" class="collapse show" aria-labelledby="headingOne" data-parent="#faq_accordion">            
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here   </p>   
+            </div>
+        </div>
+        <div class="accordion_wpr">
+            <button class="text-left" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Which payment method should i use? <i data-feather="chevron-down"></i>
+            </button>
+            <div id="faq2" class="collapse" aria-labelledby="headingOne" data-parent="#faq_accordion">            
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here   </p>   
+            </div>
+        </div>
+        <div class="accordion_wpr">
+            <button class="text-left" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              I’m missing an item from my order
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div id="faq3" class="collapse" aria-labelledby="headingOne" data-parent="#faq_accordion">            
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here   </p>   
+            </div>
+        </div>
+        <div class="accordion_wpr">
+          <button class="text-left" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq3">
+            Can I cancel my order?
+            <i data-feather="chevron-down"></i>
+          </button>
+          <div id="faq4" class="collapse" aria-labelledby="headingOne" data-parent="#faq_accordion">            
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here   </p>   
+          </div>
+      </div>
+      <div class="accordion_wpr">
+        <button class="text-left" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq3">
+          Problems placing your order?
+          <i data-feather="chevron-down"></i>
+        </button>
+        <div id="faq5" class="collapse" aria-labelledby="headingOne" data-parent="#faq_accordion">            
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here   </p>   
+        </div>
+    </div>
+    </div>
+</div>
+
+  
+</section>
+
+
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')

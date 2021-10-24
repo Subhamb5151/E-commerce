@@ -1,0 +1,28 @@
+.breadcrumb-wrapper {
+	padding: 24px 0;
+	background-image: url('../../assets/images/breadcrumb.png');
+	.breadcrumb {
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		li {
+			font-size: 1.4rem;
+			a {
+				color: $gray600;
+				font-size: 1.4rem;
+			}
+			&.active {
+				color: $secondary-color;
+				font-weight: 500;
+			}
+			+ li {
+				&::before {
+					color: $secondary-color;
+					padding: 0 8px;
+					content: url('../../assets/images/chevron-right.svg');
+				}
+			}
+		}
+	}
+}
